@@ -1,17 +1,19 @@
 import "./App.css";
-import React, { Suspense, useLayoutEffect } from "react";
-import { Canvas } from "@react-three/fiber";
-import { useSpring, animated } from "@react-spring/three";
-import MyRotatingBox from "./components/my-rotating-box";
-import { VRButton, ARButton, XR, Controllers, Hands } from "@react-three/xr";
+
+import { ARButton, Controllers, Hands, VRButton, XR } from "@react-three/xr";
 import {
-  Center,
   AccumulativeShadows,
-  RandomizedLight,
-  OrbitControls,
+  Center,
   Environment,
+  OrbitControls,
+  RandomizedLight,
   useGLTF,
 } from "@react-three/drei";
+import React, { Suspense, useLayoutEffect } from "react";
+import { animated, useSpring } from "@react-spring/three";
+
+import { Canvas } from "@react-three/fiber";
+import MyRotatingBox from "./components/my-rotating-box";
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
           <color attach="background" args={["#e0b7ff"]} />
           <ambientLight args={["#ffffff"]} intensity={3} />
           <spotLight intensity={1400} position={[10, 10, 10]} />
-          <Center top>
+          <Center top position={[0, 0, 21]}>
             <Suzi rotation={[-0.63, 0, 0]} scale={1} position={[5, -10, 15]} />
           </Center>
           <Center top position={[-2, 0, 1]}>
