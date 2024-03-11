@@ -26,7 +26,7 @@ function App() {
           <ambientLight args={["#ffffff"]} intensity={3} />
           <spotLight intensity={1400} position={[10, 10, 10]} />
           <Center top>
-            <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[5, -10, 15]} />
+            <Suzi rotation={[-0.63, 0, 0]} scale={1} position={[5, -10, 15]} />
           </Center>
           <Center top position={[-2, 0, 1]}>
             <mesh castShadow>
