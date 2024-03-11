@@ -16,11 +16,12 @@ function MyRotatingBox() {
       scale={active ? 1.5 : 3.1}
       onClick={() => setActive(!active)}
       ref={myMesh}
+      position={[10, 0, 0]}
     >
       {/* <boxBufferGeometry /> */}
-      <spotLight intensity={0.8} position={[0, 10, 0]} color="white" />
+      <spotLight intensity={0.98} position={[0, 10, 0]} color="white" />
 
-      <boxGeometry args={[1, 1, 2]} />
+      <boxGeometry args={[1, 1, 2]} position={[2, 2, 0]} />
       <meshNormalMaterial />
     </mesh>
   );
