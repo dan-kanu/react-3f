@@ -23,9 +23,10 @@ function App() {
           <Hands />
           <MyRotatingBox />
           <color attach="background" args={["#e0b7ff"]} />
-          <ambientLight args={["#e0b7ff"]} intensity={3} />
+          <ambientLight args={["#ffffff"]} intensity={3} />
+          <spotLight intensity={1400} position={[10, 10, 10]} />
           <Center top>
-            <Suzi rotation={[-0.63, 0, 0]} scale={2} />
+            <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[5, 0, 5]} />
           </Center>
           <Center top position={[-2, 0, 1]}>
             <mesh castShadow>
@@ -33,7 +34,7 @@ function App() {
               <meshStandardMaterial color="lightblue" />
             </mesh>
           </Center>
-          <gridHelper args={[10, 10, 10, 10, 10, 10]} />
+          <gridHelper args={[50, 10, 10, 30, 30, 30]} />
           <OrbitControls makeDefault />
         </XR>
       </Canvas>
