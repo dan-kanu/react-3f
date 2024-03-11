@@ -21,9 +21,9 @@ function App() {
         <MyRotatingBox />
         <color attach="background" args={["#e0b7ff"]} />
         <ambientLight args={["#e0b7ff"]} intensity={3} />
-        <Center top>
+        {/* <Center top>
           <Suzi rotation={[-0.63, 0, 0]} scale={2} />
-        </Center>
+        </Center> */}
         <Center top position={[-2, 0, 1]}>
           <mesh castShadow>
             <sphereGeometry args={[0.25, 64, 64]} />
