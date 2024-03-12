@@ -27,7 +27,7 @@ function App() {
           <Controllers />
           <Hands />
           {/* <MyRotatingBox /> */}
-          <Center position={[0, 1, -5]}>
+          <Center position={[0, 1, -1]}>
             <MyBlender />
           </Center>
 
@@ -40,9 +40,10 @@ function App() {
           {/* <color attach="background" args={["#e0b7ff"]} /> */}
           {/* <ambientLight args={["#ffffff"]} intensity={3} /> */}
           {/* <spotLight intensity={1400} position={[10, 10, 10]} /> */}
-          <Center top position={[3, 0, 1]}>
+          {/* <Center top position={[3, 0, 1]}>
             <Suzi rotation={[-0.63, 0, 0]} scale={1} position={[5, 0, 15]} />
-          </Center>
+          </Center> */}
+
           <Center top position={[-2, 0, 1]}>
             <mesh castShadow>
               <sphereGeometry args={[0.25, 64, 64]} />

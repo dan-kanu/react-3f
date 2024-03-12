@@ -13,7 +13,7 @@ function MyBlender() {
   });
   return (
     <Suspense fallback={null}>
-      <primitive ref={myMesh} object={gltf.scene} />;
+      <primitive ref={myMesh} object={gltf.scene} castShadow receiveShadow />;
     </Suspense>
   );
 }
