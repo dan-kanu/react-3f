@@ -14,16 +14,22 @@ import { animated, useSpring } from "@react-spring/three";
 
 import { Canvas } from "@react-three/fiber";
 import MyRotatingBox from "./components/my-rotating-box";
+import MyBlender from "./components/my-blender";
 
 function App() {
   return (
     <>
       <VRButton />
       <Canvas flat dpr={[1, 2]} camera={{ fov: 75, position: [0, 0, 18] }}>
+        <Environment preset="sunset" />
+
         <XR>
           <Controllers />
           <Hands />
           <MyRotatingBox />
+          <Center position={[0, 1, -5]}>
+            <MyBlender />
+          </Center>
           <color attach="background" args={["#e0b7ff"]} />
           <ambientLight args={["#ffffff"]} intensity={3} />
           <spotLight intensity={1400} position={[10, 10, 10]} />
