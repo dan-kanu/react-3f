@@ -30,11 +30,7 @@ function App() {
           <Center position={[0, 1, -5]}>
             <MyBlender />
           </Center>
-          <directionalLight color="red" position={[0, 0, 5]} />
-          <mesh>
-            <boxGeometry />
-            <meshStandardMaterial />
-          </mesh>
+
           <Center>
             <mesh castShadow scale={[10, 10, 10]}>
               <boxGeometry args={[10, 10, 10]} />
@@ -43,7 +39,7 @@ function App() {
           </Center>
           {/* <color attach="background" args={["#e0b7ff"]} /> */}
           {/* <ambientLight args={["#ffffff"]} intensity={3} /> */}
-          <spotLight intensity={1400} position={[10, 10, 10]} />
+          {/* <spotLight intensity={1400} position={[10, 10, 10]} /> */}
           <Center top position={[3, 0, 1]}>
             <Suzi rotation={[-0.63, 0, 0]} scale={1} position={[5, 0, 15]} />
           </Center>
