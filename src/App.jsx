@@ -26,9 +26,15 @@ function App() {
         <XR>
           <Controllers />
           <Hands />
-          <MyRotatingBox />
+          {/* <MyRotatingBox /> */}
           <Center position={[0, 1, -5]}>
             <MyBlender />
+          </Center>
+          <Center>
+            <mesh castShadow scale={[10, 10, 10]}>
+              <boxGeometry args={[10, 10, 10]} />
+              <meshStandardMaterial color="red" />
+            </mesh>
           </Center>
           <color attach="background" args={["#e0b7ff"]} />
           <ambientLight args={["#ffffff"]} intensity={3} />

@@ -10,8 +10,6 @@ function MyBlender() {
 
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
-    myMesh.current.rotation.x = a;
-    myMesh.current.rotation.y = a;
   });
   return (
     <Suspense fallback={null}>
