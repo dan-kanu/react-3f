@@ -17,13 +17,7 @@ const Gallery = () => {
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <EffectComposer autoClear>
-          <Bubble />
-          <Bubble scale={2} />
-          <Bubble scale={1} />
-
           <Pointer />
-
-          <N8AO color="red" aoRadius={22} intensity={3} />
         </EffectComposer>
       </mesh>
     </Suspense>
