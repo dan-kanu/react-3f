@@ -20,8 +20,7 @@ const Gallery = () => {
           <Bubble />
           <Bubble scale={2} />
           <Bubble scale={1} />
-          <Bubble scale={1} />
-          <Bubble scale={1} />
+
           <Pointer />
 
           <N8AO color="red" aoRadius={22} intensity={3} />

@@ -65,7 +65,7 @@ function App() {
             <OrbitControls makeDefault />
             <Hands />
           </XR>
-          {/* <Gallery /> */}
+          <Gallery />
         </Physics>
       </Canvas>
     </>
