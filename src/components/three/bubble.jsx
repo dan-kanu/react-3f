@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import * as THREE from "three";
-import { useGLTF } from "@react-three/drei";
+// import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 import { RigidBody, BallCollider, CylinderCollider } from "@react-three/rapier";

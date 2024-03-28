@@ -18,7 +18,14 @@ function App() {
   return (
     <>
       <VRButton />
-      <Canvas flat dpr={[1, 2]} camera={{ fov: 75, position: [0, 0, 18] }}>
+      <Canvas
+        frameloop="demand"
+        gl={{ preserveDrawingBuffer: true }}
+        
+        dpr={[1, 2]}
+        camera={{ fov: 75, position: [0, 0, 18] }}
+        shadows
+      >
         <Environment preset="sunset" />
 
         <XR>
@@ -56,8 +63,9 @@ function App() {
 
           {/* <gridHelper args={[50, 10, 10, 30, 30, 30]} /> */}
           <OrbitControls makeDefault />
+          <Hands />
         </XR>
-          <Gallery />
+        <Gallery />
       </Canvas>
     </>
   );

@@ -5,7 +5,6 @@ import { RigidBody } from "@react-three/rapier";
 import { BallCollider } from "@react-three/rapier";
 import { useRef } from "react";
 
-
 const Pointer = ({ vec = new THREE.Vector3() }) => {
   const ref = useRef();
   useFrame(({ mouse, viewport }) => {
