@@ -12,6 +12,7 @@ import {
 import React, { Suspense, useLayoutEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import MyBlender from "./components/my-blender";
+import Gallery from "./components/gallery";
 
 function App() {
   return (
@@ -30,12 +31,13 @@ function App() {
 
           <SpotLight
             intensity={544} // Adjust intensity as needed
-            position={[1, 5, 2]} // Adjust position
-            angle={Math.PI / 4} // Set the angle of the spotlight
+            position={[1, 5, 1]} // Adjust position
+            angle={Math.PI / 7} // Set the angle of the spotlight
             penumbra={0.5} // Set the penumbra for soft edges
             castShadow // Enable shadow casting
             color={"#FFF450"} // Set the color of the spotlight
             distance={9} // Set the distance of the spotlight
+            // target={[10, 0, 0]} // Set the target of the spotlight
           />
 
           <Center>
@@ -52,9 +54,10 @@ function App() {
             </mesh>
           </Center>
 
-          <gridHelper args={[50, 10, 10, 30, 30, 30]} />
+          {/* <gridHelper args={[50, 10, 10, 30, 30, 30]} /> */}
           <OrbitControls makeDefault />
         </XR>
+          <Gallery />
       </Canvas>
     </>
   );
